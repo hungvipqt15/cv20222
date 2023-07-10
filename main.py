@@ -45,6 +45,6 @@ if img is not None:
     st.write("### Output image:")
     output_array = output.numpy()
     output_img = Image.fromarray(np.uint8(output_array[0]))
-    st.image(output_img, width=350)
+    st.image(output_img, width=500)
 else:
   st.subheader('Please upload an image!')
